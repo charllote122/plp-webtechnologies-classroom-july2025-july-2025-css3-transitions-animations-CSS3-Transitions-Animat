@@ -1,0 +1,37 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Part 1: Button hover animation */
+.animated-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.1);
+}
+
+/* Part 3: Box animation */
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733;
+    margin: 20px 0;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Keyframe animation for bonus effect */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
